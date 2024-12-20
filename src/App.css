@@ -3,48 +3,8 @@
   gap: 40px;
   font-size: x-large;
   list-style-type: none;
-  cursor: pointer;
 }
-.list > li {
+ul {
   position: relative;
-  display: flex;
-  justify-content: center;
-}
-.list > li::before {
-  background-color: white;
-  color: black;
-  padding: 5px 15px;
-  position: absolute;
-  bottom: 140%;
-  width: max-content;
-  border-radius: 10px;
-  display: none;
-}
-.list > li::after {
-  content: "▼";
-  color: white;
-  position: absolute;
-  bottom: 85%;
-  display: none;
-}
-.list > li:nth-child(1)::before {
-  content: "hello world";
-}
-.list > li:nth-child(2)::before {
-  content: "hello kitty";
-}
-.list > li:nth-child(3)::before {
-  content: "hello pupper";
-}
-.list > li:nth-child(1):hover .list > li:nth-child(1)::before,
-.list > li:nth-child(1):hover .list > li:nth-child(1)::after {
-  display: block;
-}
-.list > li:nth-child(2):hover .list > li:nth-child(2)::before,
-.list > li:nth-child(2):hover .list > li:nth-child(2)::after {
-  display: block;
-}
-.list > li:nth-child(3):hover .list > li:nth-child(3)::before,
-.list > li:nth-child(3):hover .list > li:nth-child(3)::after {
-  display: block;
+  left: 20%;
 }

@@ -1,0 +1,27 @@
+li {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.toolTip {
+  width: max-content;
+  position: absolute;
+  bottom: 120%;
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  padding: 10px 15px;
+  visibility: hidden;
+}
+.toolTip::after {
+  content: "";
+  position: absolute;
+  left: 45%;
+  top: 100%;
+  border-width: 8px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+li:hover .toolTip {
+  visibility: visible;
+}
